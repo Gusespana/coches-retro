@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  background: #0a0a1f;
+  color: #e0e0ff;
+  font-family: "Press Start 2P", monospace;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  user-select: none;
+  overscroll-behavior: none;
+  touch-action: manipulation;
+}
+
+/* Prevent iOS Safari double-tap-to-zoom */
+* {
+  touch-action: manipulation;
+}
+
+.retro-text-glow {
+  text-shadow: 0 0 6px currentColor, 0 0 12px currentColor;
+}
+
+.btn-neon {
+  background: transparent;
+  border: 2px solid #05d9e8;
+  color: #05d9e8;
+  padding: 0.75rem 1.5rem;
+  text-transform: uppercase;
+  transition: all 0.15s;
+  text-shadow: 0 0 4px currentColor;
+  box-shadow: 0 0 10px rgba(5, 217, 232, 0.3),
+    inset 0 0 10px rgba(5, 217, 232, 0.1);
+}
+.btn-neon:active {
+  background: #05d9e8;
+  color: #0a0a1f;
+  box-shadow: 0 0 20px #05d9e8;
+}
